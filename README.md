@@ -1,16 +1,52 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🧾 Step-by-Step Records Form
 
-Currently, two official plugins are available:
+### Enter information one step at a time, then keep your records saved.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A small React form exercise that collects a name, job, and age through a guided three-step flow and displays saved entries.
 
-## React Compiler
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=20232A)](https://react.dev/) [![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/) [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+</div>
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Three-step data entry: name, job, and age.
+- Required-field checks before moving to the next step.
+- Automatic focus on the active step's input.
+- Enter key support to continue the form.
+- Save completed records to a list.
+- Delete an existing record.
+- Persist saved rows in browser localStorage.
+- Purple gradient page background with a centered form card.
+
+## 🛠️ Built with
+
+- React 19, JavaScript, Vite
+- Tailwind CSS 4
+- Browser localStorage
+
+## ⚙️ Run locally
+
+~~~bash
+git clone https://github.com/modewika1-star/t16-todolist.git
+cd t16-todolist
+npm install
+npm run dev
+~~~
+
+Production build:
+
+~~~bash
+npm run build
+npm run preview
+~~~
+
+## 💾 Data persistence
+
+Saved records are stored in the browser using the localStorage key `rows`. Data remains available in the same browser until its site storage is cleared. There is no cloud synchronization in the inspected app code.
+
+---
+
+**Repository:** [modewika1-star/t16-todolist](https://github.com/modewika1-star/t16-todolist)
