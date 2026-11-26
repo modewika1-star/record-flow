@@ -6,3 +6,30 @@ body {
   background: linear-gradient(135deg, #6d28d9, #9333ea);
   font-family: Arial;
 }
+
+.site-credit-footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+  padding: 18px 0 2px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  line-height: 1.5;
+  direction: ltr;
+}
+
+.site-credit-left { justify-self: start; white-space: nowrap; }
+.site-credit-center { justify-self: center; text-align: center; }
+.site-credit-right { justify-self: end; white-space: nowrap; }
+.site-credit-footer a { color: #ddd6fe; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+
+@media (max-width: 600px) {
+  .site-credit-footer { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px; }
+  .site-credit-center { grid-column: 1 / -1; grid-row: 1; }
+  .site-credit-left { grid-column: 1; grid-row: 2; }
+  .site-credit-right { grid-column: 2; grid-row: 2; }
+}

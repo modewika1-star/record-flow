@@ -66,7 +66,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-600 to-purple-900 p-10">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-purple-600 to-purple-900 p-10">
 
       {/* FORM */}
       <div className="bg-white p-6 rounded-xl max-w-md mx-auto mb-10 shadow-xl">
@@ -162,6 +162,13 @@ function App() {
         </table>
       </div>
 
+      <footer className="site-credit-footer" dir="ltr">
+        <span className="site-credit-left">
+          Created by <a href="https://7ijazi.vercel.app/" target="_blank" rel="noopener noreferrer">7ijazi</a>
+        </span>
+        <span className="site-credit-center">© 2026 All Rights Reserved</span>
+        <span className="site-credit-right">Made in 2026</span>
+      </footer>
     </div>
   );
 }
